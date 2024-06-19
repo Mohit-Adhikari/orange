@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "880272362701",
+    "project_id": "mohan-cf98d",
+    "storage_bucket": "mohan-cf98d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880272362701:android:7abab885da028742172d84",
+        "android_client_info": {
+          "package_name": "com.example.mohan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5C59FWlZNsYoSl_U-MTYQwPTO3pyK0Xc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
