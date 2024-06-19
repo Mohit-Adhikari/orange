@@ -1,19 +1,12 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mohan/features/user_auth/presentation/pages/signup_page.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
-
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
+class SignupPage extends StatelessWidget {
   TextEditingController emailController=TextEditingController();
 
   TextEditingController passwordController=TextEditingController();
+   SignupPage({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -25,10 +18,10 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text('Login',style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),),
+            Text('Sign up',style: TextStyle(fontSize: 27, fontWeight: FontWeight.bold),),
             SizedBox(height:20),
             TextField(
-            controller: emailController,
+              controller: emailController,
               decoration: InputDecoration(
                 hintText: 'Enter email',
               ),
@@ -43,16 +36,16 @@ class _LoginPageState extends State<LoginPage> {
             ),
             SizedBox(height: 20),
             ElevatedButton(onPressed: (){print('hi');},
-                child:Text('Submit'),
+              child:Text('Submit'),
             ),
             SizedBox(height: 20),
             GestureDetector(
-              onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SignupPage()));
-              },
+                onTap: (){
+
+                },
                 child:
-                Text('Dont have Account? Sign up!',style: TextStyle(fontSize: 11,color: Colors.blue),)),
-            
+                Text('Already have account?',style: TextStyle(fontSize: 11,color: Colors.blue),)),
+
           ],
         ),
       ),
